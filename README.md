@@ -39,7 +39,9 @@ If for example we want a strategy that consists of more than 3 option we have to
 
 
 **SHORT CALL 2/8/2022 2/12/2022 285**
+
 **LONG CALL 2/2/2017 2/2/2022 150**
+
 **LONG PUT 29/12/2021 29/12/2022 325**
 
 In the GitHub folder there are 2 sets of data, one for ISP.MI and the other for SHEL. Both have more than 25 year of data which can be used to backtest the strategy. If you want to Backtest a different company just download from yahoo finance the historical data and upload them in the folder in which there are the other 2 files.
