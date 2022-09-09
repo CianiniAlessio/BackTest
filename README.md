@@ -1,5 +1,5 @@
 ## Introduction
-![debug](https://user-images.githubusercontent.com/109857992/189388949-1ec9c77c-7301-4064-9ecf-af834a1af953.png)
+
 
 While trying to find a platform on the internet in which is possible to backtest an option strategy I decided to develop my own. 
 The option pricing is based on a Black & Scholes model and of course it's limited to its assumption, but it can be a good approximation of the reality.
@@ -54,7 +54,7 @@ In the GitHub folder there are 2 sets of data, one for ISP.MI and the other for 
 At the end of the backtest you'll have a debug screen like this:
 
 
-\includegraphics[scale=0.8]{debug.png}
+![debug](https://user-images.githubusercontent.com/109857992/189388949-1ec9c77c-7301-4064-9ecf-af834a1af953.png)
 
 In which there are the data about the option, the premium paid and the profit at maturity. The final profit is the sum of all the profits and losses.
 
