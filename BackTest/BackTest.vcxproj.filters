@@ -13,39 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{27513ff9-d822-466e-91e9-2bc1a06db1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SoruceFiles">
+      <UniqueIdentifier>{5c89d621-b863-459e-a45a-05c189df7ed5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BackTest.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
-    <ClCompile Include="Reader.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
-    <ClCompile Include="QuantLibrary.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
-    <ClCompile Include="Option.cpp">
-      <Filter>File di origine</Filter>
+      <Filter>SoruceFiles</Filter>
     </ClCompile>
     <ClCompile Include="DateProcessor.cpp">
-      <Filter>File di origine</Filter>
+      <Filter>SoruceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Option.cpp">
+      <Filter>SoruceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantLibrary.cpp">
+      <Filter>SoruceFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Reader.cpp">
+      <Filter>SoruceFiles</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Reader.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
-    <ClInclude Include="QuantLibrary.h">
-      <Filter>File di intestazione</Filter>
+    <ClInclude Include="DateProcessor.h">
+      <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="Option.h">
-      <Filter>File di intestazione</Filter>
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantLibrary.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Reader.h">
+      <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
-    <ClInclude Include="DateProcessor.h">
-      <Filter>File di intestazione</Filter>
+      <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
