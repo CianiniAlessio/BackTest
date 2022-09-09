@@ -1,4 +1,5 @@
 ## Introduction
+[debug.png]
 While trying to find a platform on the internet in which is possible to backtest an option strategy I decided to develop my own. 
 The option pricing is based on a Black & Scholes model and of course it's limited to its assumption, but it can be a good approximation of the reality.
 
