@@ -1,17 +1,19 @@
 ## Introduction
-While trying to find a platform on the internet in which is possible to backtest an option strategy I decided to develop my own.\\The option pricing is based on a Black & Scholes model and of course it's limited to its assumption, but it can be a good approximation of the reality.\\\\
-{\Large\textbf{Black \& Scholes Model}}\\\\
-About the B&S model, in order to apply its formula, we need to assume that the market consists of at least one risky asset and one riskless asset.\\
-The assumption concerning the risky asset are:\\
-- The Riskless rate is constant \\
-- The stock does not pay a dividend\\ 
-- The log-return of a stock price is an infinitesimal random walk with drift. This means that our stock needs to follow a Geometric Brownian Motion.\\
-We consider a stochastic-process $S_t$ to be a Geometric Brownian Motion if it satisfies the following SDE: $$dS_t = \mu S_tdt + \sigma S_tdW_t$$ in which $W_t$ is a Brownian Motion, $\mu$ the drift and $\sigma$ the volatility.\\
-We have also some assumption to be made for the market and those are:\\
-- No arbitrage opportunity \\
-- Ability to borrow and lend any amount.\\
-- Ability to buy and sell any amount\\
-- The above transactions do not incur any fees or costs\\\\
+While trying to find a platform on the internet in which is possible to backtest an option strategy I decided to develop my own. 
+The option pricing is based on a Black & Scholes model and of course it's limited to its assumption, but it can be a good approximation of the reality.
+
+## Black \& Scholes Model
+About the B&S model, in order to apply its formula, we need to assume that the market consists of at least one risky asset and one riskless asset.
+The assumption concerning the risky asset are:
+- The Riskless rate is constant 
+- The stock does not pay a dividend 
+- The log-return of a stock price is an infinitesimal random walk with drift. This means that our stock needs to follow a Geometric Brownian Motion.
+We consider a stochastic-process $S_t$ to be a Geometric Brownian Motion if it satisfies the following SDE: $$dS_t = \mu S_tdt + \sigma S_tdW_t$$ in which $W_t$ is a Brownian Motion, $\mu$ the drift and $\sigma$ the volatility.
+We have also some assumption to be made for the market and those are:
+- No arbitrage opportunity 
+- Ability to borrow and lend any amount.
+- Ability to buy and sell any amount
+- The above transactions do not incur any fees or costs
 With all these assumption we can introduce the B&S equation:
 $$\frac{\partial V}{\partial t} + \frac{1}{2}\sigma^2 S^2 \frac{\partial ^2 V}{\partial S^2} + rS\frac{\partial V}{\partial S} - rV = 0.$$
 This formula calculates the price of Put and Call European Option and the value is obtained through these steps:\\
@@ -20,7 +22,7 @@ $$C(S_t,t) = \mathcal{N}(d_1)S_t - \mathcal{N}(d_2)Ke^{r(T-t)}$$ in which $$d_1 
 If we want to compute the price for a Put Option we just have:$$P(S_t,t) = \mathcal{N}(-d_2)Ke^{-r(T-t)} - \mathcal{N}(-d1)S_t$$\\\\
  {\Large\textbf{How the code works}}\\\\\\
  In this project I created different class with different meanings:\\
- The class \textbf{DateProcessor} and \textbf{Reader} are two simple class to prepare the data.\\
+ The class # DateProcessor and \textbf{Reader} are two simple class to prepare the data.\\
  The class \textbf{QuantLibrary} presents the math needed to compute the price of the option\\
  The class \textbf{Option} defines the object Option which I'll use to calculate the final profit.\\
  The class \textbf{BackTest} contains the main method in which I've done all the code for the backtest of the strategy\\\\
