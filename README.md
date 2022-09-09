@@ -1,4 +1,4 @@
-##Introduction
+## Introduction
 While trying to find a platform on the internet in which is possible to backtest an option strategy I decided to develop my own.\\The option pricing is based on a Black & Scholes model and of course it's limited to its assumption, but it can be a good approximation of the reality.\\\\
 {\Large\textbf{Black \& Scholes Model}}\\\\
 About the B&S model, in order to apply its formula, we need to assume that the market consists of at least one risky asset and one riskless asset.\\
