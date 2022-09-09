@@ -100,7 +100,7 @@ Reader::ReturnMap(
 	
 	int countrow = 0;
 	std::string topush;
-	for (auto i : lines)
+	for (auto& i : lines)
 	{
 		
 		if (countrow != 0 && i.size()==7)

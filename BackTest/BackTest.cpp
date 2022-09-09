@@ -4,12 +4,14 @@
 #include <stdio.h>
 #include <chrono>
 #include "Reader.h"
-#include "QuantLibrary.h"
 #include "Option.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include<fstream>
+
+#include "QuantLibrary.h"
+
 
 int main()
 {
@@ -35,10 +37,9 @@ int main()
     bool passedMaturity = false;
     
     std::ofstream foutProfits;
-    std::ofstream foutClosing;
-
+    
     foutProfits.open("csvProfits.csv", std::ofstream::out | std::ofstream::trunc);
-    foutClosing.open("csvClosing.csv", std::ofstream::out | std::ofstream::trunc);
+    
     
     for (int i = 0; i < map["Adj Close"].size() - 1; ++i)
     {
@@ -108,7 +109,7 @@ int main()
         if (foutProfits.is_open())
         {
             foutProfits << "Cumulated Profit: " + std::to_string(finalProfit);
-            foutClosing << std::to_string(map["Adj Close"][i]) + ',';
+            
         }
         
         
